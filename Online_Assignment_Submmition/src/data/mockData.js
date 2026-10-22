@@ -1,0 +1,281 @@
+// sample data only
+
+export const studentProfile = {
+  id: 'student-01',
+  name: 'Samuel Bekele',
+  email: 'student@mekdela.edu',
+  studentId: 'MKA-2024-018',
+  program: 'Computer Science',
+  year: 'Third Year',
+  phone: '+251 911 223 344',
+  address: 'Main Campus, Mekdela Amba University',
+  cgpa: 3.82,
+}
+
+export const courses = [
+  {
+    id: 'course-web',
+    code: 'CS-332',
+    name: 'Web Technologies',
+    instructorId: 'instructor-01',
+    instructor: 'Dr. Aster Alemu',
+    credits: 3,
+    progress: 82,
+    nextLecture: '2026-10-24T10:00:00',
+    category: 'Core',
+  },
+  {
+    id: 'course-db',
+    code: 'CS-311',
+    name: 'Database Systems',
+    instructorId: 'instructor-01',
+    instructor: 'Dr. Bethel Wolde',
+    credits: 3,
+    progress: 68,
+    nextLecture: '2026-10-25T09:00:00',
+    category: 'Core',
+  },
+  {
+    id: 'course-ai',
+    code: 'CS-410',
+    name: 'Artificial Intelligence',
+    instructorId: 'instructor-02',
+    instructor: 'Mr. Tewodros Mesfin',
+    credits: 4,
+    progress: 74,
+    nextLecture: '2026-10-28T13:00:00',
+    category: 'Elective',
+  },
+  {
+    id: 'course-os',
+    code: 'CS-250',
+    name: 'Operating Systems',
+    instructorId: 'instructor-02',
+    instructor: 'Dr. Yonas Abebe',
+    credits: 3,
+    progress: 57,
+    nextLecture: '2026-10-22T14:00:00',
+    category: 'Core',
+  },
+]
+
+export const assignments = [
+  {
+    id: 'assign-101',
+    title: 'Responsive Portfolio Project',
+    courseId: 'course-web',
+    course: 'Web Technologies',
+    dueDate: '2026-10-30T23:59:00',
+    status: 'Pending',
+    maxMarks: 30,
+    description: 'Build a responsive portfolio landing page with navigation, sections, and form validation.',
+    instructions:
+      'Submit a compressed ZIP of the final project, including HTML, CSS, JavaScript, and a short README explaining your implementation and features.',
+  },
+  {
+    id: 'assign-102',
+    title: 'ER Diagram Practice',
+    courseId: 'course-db',
+    course: 'Database Systems',
+    dueDate: '2026-10-27T20:00:00',
+    status: 'Graded',
+    maxMarks: 25,
+    description: 'Create a normalized database schema and present relationships between entities.',
+    instructions:
+      'Submit your solution as a PDF or DOCX with all entities, attributes, constraints, and cardinality mapped clearly.',
+  },
+  {
+    id: 'assign-103',
+    title: 'Search Algorithms Comparison',
+    courseId: 'course-ai',
+    course: 'Artificial Intelligence',
+    dueDate: '2026-10-20T18:00:00',
+    status: 'Late',
+    maxMarks: 20,
+    description: 'Compare BFS, DFS, A*, and greedy approaches on a sample search problem.',
+    instructions:
+      'Provide a short report in PDF format with performance analysis and a small pseudocode comparison.',
+  },
+  {
+    id: 'assign-104',
+    title: 'Shell Scripting Lab',
+    courseId: 'course-os',
+    course: 'Operating Systems',
+    dueDate: '2026-11-02T22:00:00',
+    status: 'Pending',
+    maxMarks: 15,
+    description: 'Implement a shell script that automates a routine system administration task.',
+    instructions:
+      'Attach the script as a .sh file and include output screenshots in a ZIP archive.',
+  },
+]
+
+export const submissions = [
+  {
+    id: 'submission-01',
+    assignmentId: 'assign-102',
+    assignmentTitle: 'ER Diagram Practice',
+    submittedAt: '2026-10-18T17:45:00',
+    status: 'Graded',
+    grade: 23,
+    maxMarks: 25,
+    feedback: 'Good entity separation and accurate cardinality. Add stronger explanation for the weak entity case.',
+  },
+  {
+    id: 'submission-02',
+    assignmentId: 'assign-103',
+    assignmentTitle: 'Search Algorithms Comparison',
+    submittedAt: '2026-10-21T00:20:00',
+    status: 'Late',
+    grade: null,
+    maxMarks: 20,
+    feedback: 'Submission was recorded after the deadline and is pending instructor review.',
+  },
+  {
+    id: 'submission-03',
+    assignmentId: 'assign-104',
+    assignmentTitle: 'Shell Scripting Lab',
+    submittedAt: null,
+    status: 'Not Submitted',
+    grade: null,
+    maxMarks: 15,
+    feedback: 'This assignment is still pending submission.',
+  },
+]
+
+export const grades = [
+  {
+    id: 'grade-01',
+    assignment: 'ER Diagram Practice',
+    course: 'Database Systems',
+    grade: 23,
+    maxMarks: 25,
+    feedback: 'Strong diagram structure. A clearer explanation of the weak entity relationship would improve clarity.',
+    status: 'Graded',
+  },
+  {
+    id: 'grade-02',
+    assignment: 'Group Discussion Reflection',
+    course: 'Web Technologies',
+    grade: 18,
+    maxMarks: 20,
+    feedback: 'Good insights and presentation. More evidence from the discussion would strengthen the final answer.',
+    status: 'Graded',
+  },
+  {
+    id: 'grade-03',
+    assignment: 'Search Algorithms Comparison',
+    course: 'Artificial Intelligence',
+    grade: null,
+    maxMarks: 20,
+    feedback: 'Pending evaluation after late submission.',
+    status: 'Pending',
+  },
+]
+
+export const notifications = [
+  {
+    id: 'notif-01',
+    title: 'Assignment due soon',
+    message: 'Responsive Portfolio Project is due in 9 days. Submit before the deadline to avoid penalties.',
+    time: '2026-10-21T08:00:00',
+    unread: true,
+  },
+  {
+    id: 'notif-02',
+    title: 'Grade published',
+    message: 'Your ER Diagram Practice grade is now available in your gradebook.',
+    time: '2026-10-18T16:30:00',
+    unread: false,
+  },
+  {
+    id: 'notif-03',
+    title: 'Course update',
+    message: 'Web Technologies lecture has moved to Hall A-2 next week.',
+    time: '2026-10-17T12:15:00',
+    unread: true,
+  },
+]
+
+export const users = [
+  {
+    id: 'student-01',
+    name: 'Samuel Bekele',
+    email: 'student@mekdela.edu',
+    role: 'student',
+    status: 'Active',
+    department: 'Computer Science',
+    joinedAt: '2024-09-01',
+  },
+  {
+    id: 'instructor-01',
+    name: 'Aster Alemu',
+    email: 'instructor@mekdela.edu',
+    role: 'instructor',
+    status: 'Active',
+    department: 'Computer Science',
+    joinedAt: '2020-10-14',
+  },
+  {
+    id: 'instructor-02',
+    name: 'Bethel Wolde',
+    email: 'bethel@mekdela.edu',
+    role: 'instructor',
+    status: 'Active',
+    department: 'Computer Science',
+    joinedAt: '2021-02-03',
+  },
+  {
+    id: 'admin-01',
+    name: 'Daniel Tessema',
+    email: 'admin@mekdela.edu',
+    role: 'admin',
+    status: 'Active',
+    department: 'Information Technology',
+    joinedAt: '2019-01-20',
+  },
+  {
+    id: 'student-02',
+    name: 'Hana Girma',
+    email: 'hana.girma@mekdela.edu',
+    role: 'student',
+    status: 'Inactive',
+    department: 'Computer Science',
+    joinedAt: '2023-09-01',
+  },
+]
+
+export const activityLog = [
+  {
+    id: 'activity-01',
+    actor: 'Aster Alemu',
+    action: 'Published an assignment',
+    target: 'Responsive Portfolio Project',
+    createdAt: '2026-10-21T09:30:00',
+    category: 'Assignment',
+  },
+  {
+    id: 'activity-02',
+    actor: 'Samuel Bekele',
+    action: 'Submitted assignment',
+    target: 'Search Algorithms Comparison',
+    createdAt: '2026-10-21T00:20:00',
+    category: 'Submission',
+  },
+  {
+    id: 'activity-03',
+    actor: 'Daniel Tessema',
+    action: 'Updated user status',
+    target: 'Hana Girma',
+    createdAt: '2026-10-20T14:00:00',
+    category: 'User',
+  },
+  {
+    id: 'activity-04',
+    actor: 'Bethel Wolde',
+    action: 'Published evaluation',
+    target: 'ER Diagram Practice',
+    createdAt: '2026-10-18T16:30:00',
+    category: 'Grade',
+  },
+]
